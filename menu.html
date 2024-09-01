@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - JNEC Canteen Management System</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4; /* Light gray background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .header {
+            background-color: #007bff; /* Blue header background */
+            color: white;
+            padding: 20px 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .menu-container {
+            padding: 20px;
+            max-width: 1200px;
+            width: 90%;
+        }
+        .menu-category {
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        .menu-category h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .menu-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .menu-item h3 {
+            font-size: 20px;
+            margin: 0;
+            color: #333;
+        }
+        .menu-item p {
+            font-size: 16px;
+            color: #666;
+            margin: 5px 0;
+        }
+        .menu-item span {
+            font-size: 18px;
+            color: #007bff; /* Blue color for prices */
+        }
+        @media (max-width: 768px) {
+            .menu-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .menu-item span {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Menu</h1>
+    </div>
+    <div class="menu-container">
+        <!-- Fast Food Section -->
+        <div class="menu-category">
+            <h2>Fast Food</h2>
+            <div class="menu-item">
+                <div>
+                    <h3>Momo</h3>
+                    <p>Steamed dumplings filled with minced meat or vegetables, served with a spicy dipping sauce.</p>
+                </div>
+                <span>Nu 150</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Shakam Ema Datshi</h3>
+                    <p>Spicy dried beef cooked with cheese and chilies, a traditional Bhutanese dish.</p>
+                </div>
+                <span>Nu 200</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Phaksha Paa</h3>
+                    <p>Stir-fried pork with radish and chili, a flavorful and spicy Bhutanese favorite.</p>
+                </div>
+                <span>Nu 220</span>
+            </div>
+        </div>
+
+        <!-- Drinks Section -->
+        <div class="menu-category">
+            <h2>Drinks</h2>
+            <div class="menu-item">
+                <div>
+                    <h3>Butter Tea</h3>
+                    <p>Traditional Bhutanese tea made with butter, salt, and tea leaves, providing a unique taste.</p>
+                </div>
+                <span>Nu 60</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Chha Ngorma</h3>
+                    <p>Sweetened tea infused with spices, a comforting beverage perfect for any time of the day.</p>
+                </div>
+                <span>Nu 70</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Local Brew</h3>
+                    <p>A traditional Bhutanese alcoholic drink made from fermented barley or rice.</p>
+                </div>
+                <span>Nu 100</span>
+            </div>
+        </div>
+
+        <!-- Rice & Curry Section -->
+        <div class="menu-category">
+            <h2>Rice & Curry</h2>
+            <div class="menu-item">
+                <div>
+                    <h3>Jasha Maru</h3>
+                    <p>Spicy minced chicken curry cooked with onions, tomatoes, and traditional spices.</p>
+                </div>
+                <span>Nu 250</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Chili Cheese Rice</h3>
+                    <p>Steamed rice served with a spicy cheese sauce and green chilies.</p>
+                </div>
+                <span>Nu 230</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Beef Ema Datshi</h3>
+                    <p>Beef cooked with cheese and Bhutanese chilies, served with rice.</p>
+                </div>
+                <span>Nu 270</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
